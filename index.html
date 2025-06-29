@@ -202,7 +202,18 @@
         import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 
         createChat({
-            webhookUrl: 'http://localhost:5678/webhook/1c0d08f0-abd0-4bdc-beef-370c27aae1a0/chat'
+            webhookUrl: 'http://localhost:5678/webhook/1c0d08f0-abd0-4bdc-beef-370c27aae1a0/chat',
+            initialMessages: ['Hi there! 👋'],
+            i18n: {
+		en: {
+			title: 'Hi there! 👋',
+			subtitle: "Ask me anything about your POs & invoices",
+			footer: '',
+			getStarted: 'New Conversation',
+			inputPlaceholder: 'Type your question..',
+		},
+	},
+            
         });
     </script>
 </body>
